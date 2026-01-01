@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Girl Book</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div class="container-fluid book-container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8 col-lg-6">
+                <h1 class="text-center mb-4"><i> Many Happy Returns Of the Day</i>, <b>AAKRITEE!</b></h1>
+                <div id="book">
+                    <!-- Page 1 -->
+                    <div class="page active" id="page1">
+                        <img src="IMG/Cake.png" alt="Birthday Cake" class="img-fluid rounded">
+                        <p class="wishes">Happy Birthday💐, AAKRITEE! May your day be as sweet as cake 🎂 and filled with endless joy.</p>
+                    </div>
+                    <!-- Page 2 -->
+                    <div class="page" id="page2">
+                        <img src="IMG/Flowers.jpg" alt="Flowers" class="img-fluid rounded">
+                        <p class="wishes">Wishing you a year filled with happiness, love, and well-earned success💫!</p>
+                    </div>
+                    <!-- Page 3 -->
+                    <div class="page" id="page3">
+                        <img src="IMG/stars.png" alt="Stars" class="img-fluid rounded">
+                        <p class="wishes">You're the brightest star in the sky. Shine on, birthday girl!</p>
+                    </div>
+                    <!-- Page 4 -->
+                    <div class="page" id="page4">
+                        <img src="IMG/Heart.png" alt="Heart" class="img-fluid rounded">
+                        <p class="wishes">May the year ahead bloom with success and be filled with moments you’ll always remember.</p>
+                    </div>
+                    <!-- Page 5 -->
+                    <div class="page" id="page5">
+                        <img src="IMG/Party.jpg" alt="Party" class="img-fluid rounded">
+                        <p class="wishes">Let's party like it's your birthday! Cheers to another amazing year ahead.</p>
+                    </div>
+                </div>
+                <div class="text-center mt-4">
+                    <button id="prevBtn" class="btn btn-secondary me-2" disabled>Previous Page</button>
+                    <button id="nextBtn" class="btn btn-primary">Next Page</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="JS/script.js"></script>
+</body>
+</html>

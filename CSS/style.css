@@ -1,0 +1,51 @@
+/* Book container for centering and padding */
+.book-container {
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa; /* Light background for book feel */
+}
+
+/* Page styling: Hidden by default, centered content */
+.page {
+    display: none;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.5s ease-in-out; /* Smooth fade for page turns */
+}
+
+/* Add this to styles.css */
+.page img {
+    width: 300px !important;  /* Fixed width */
+    height: 350px !important; /* Fixed height */
+    object-fit: cover;        /* Ensures image fills without distortion */
+}
+
+/* Active page is visible */
+.page.active {
+    display: block;
+    opacity: 1;
+}
+
+/* Wishes text styling */
+.wishes {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .wishes {
+        font-size: 1rem;
+    }
+    .book-container {
+        padding: 10px;
+    }
+}
